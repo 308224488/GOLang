@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FirstHTML</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <script src="../static/js/index.js"></script>
+
+</head>
+<body>
+    <h1>go web 页面</h1>
+    <div class="happyDiv">
+        <span>今天心情怎么样？</span>
+    </div>
+    <form action="/user/add" name="" method="post">
+      <p>userName:<input name="userName" type="text"></p>
+        <p>userId:<input name="userId" type="text"></p>
+        <button type="submit">提交</button>
+    </form>
+    获取后端的数据为：
+    {{.message}}
+</body>
+<script>
+    test();
+</script>
+</html>
